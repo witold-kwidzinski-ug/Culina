@@ -2,13 +2,11 @@ import { router } from "expo-router"
 import { useSQLiteContext } from "expo-sqlite"
 import { useRef, useState } from "react"
 import { Image, Pressable, StyleSheet, Text, View } from "react-native"
-import { Animated } from "react-native"
 
 export default function Product({item, setItems, isShopping, setShopping, isConfirmSave, amount, setChangedItems }) {
 
     const db = useSQLiteContext()
 
-    const anim = useRef(new Animated.Value(0)).current
 
     const icon = isShopping ? require("../../assets/list_minus.png") : require("../../assets/list_plus.png")
 
