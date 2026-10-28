@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "test",
+    "name": "Culina",
     "slug": "test",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,12 +18,24 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#4C9900"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.witold_k.test"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-router",
+      "@react-native-community/datetimepicker"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "94f669af-ca9d-41f9-8efc-143d23ea5b7d"
+      }
     }
   }
 }
